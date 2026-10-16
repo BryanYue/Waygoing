@@ -2,7 +2,7 @@
 
 整理日期：2026-10-16（Asia/Shanghai）。
 
-这里集中保存个人 Harness、现有工作流自动化、学习路线和编排机制的讨论与文档。已复制 42 份已有资料，另整理 6 个相关活动的可见讨论；原文件保留在原处。
+这里集中保存个人 Harness、现有工作流自动化、LifeOS 场景验证、学习路线和编排机制的讨论与文档。首次归档复制了 42 份已有资料，并整理 6 个相关活动的可见讨论；原文件保留在原处。当前继续维护三路线规划，新增内容与原归档范围分开记录。
 
 先读 [当前方向与决定](CURRENT-DIRECTION.md)，再按目的选择：
 
@@ -10,7 +10,9 @@
 | --- | --- |
 | 继续边学边做个人 Harness | [Plan B](planning/2026-10-16/PLAN-B.md) |
 | Review 现有工作流自动化方案 | [Plan A](planning/2026-10-16/PLAN-A.md) |
-| 给新会话交接两条工作线 | [AI 交接稿](planning/2026-10-16/AI-HANDOFF.md)，同时附上当前方向 |
+| 先用 DeepSeek 验证 LifeOS | [Plan C：第一阶段](planning/2026-10-16/PLAN-C.md)，当前仅规划 |
+| 给新会话交接三条工作线 | [AI 交接稿](planning/2026-10-16/AI-HANDOFF.md)，同时附上当前方向 |
+| 准备 Waygoing 云开发环境 | [参考仓与云配置](REFERENCE-HARNESS.md)，区分草稿、发布与新任务验证 |
 | 先学模型请求、工具和 Agent 循环 | [第一课](learning/engine-basics-2026-10-06/01-model-and-agent.md) |
 | 回看最早的问题与头脑风暴 | [原始背景](brainstorming/2026-10-15-personal-harness-background.txt)、[个人 Harness 语音讨论](discussions/2026-10-15-16-personal-harness-brainstorm.md) |
 | 查看协议改善候选 | [v2.10 候选](workflow/2026-10-15-protocol-proposal/orchestration-protocol-v2.10-candidate.md)、[采用计划与审查结论](workflow/2026-10-15-protocol-proposal/adoption-review-and-checks.md) |
@@ -22,7 +24,7 @@
 
 | 目录 | 内容与使用方式 |
 | --- | --- |
-| `planning/2026-10-16/` | 两份计划及共同交接稿；保留原文，后续澄清见当前方向 |
+| `planning/2026-10-16/` | A 工程自动化、B 自研学习、C LifeOS 验证，以及持续维护的共同交接稿 |
 | `brainstorming/` | 语音前的原始背景，包含历史问题、偏好和早期开放项 |
 | `learning/engine-basics-2026-10-06/` | 早期路线、完整第一课、练习、论文阅读卡、来源书架、教学讨论和原报告 |
 | `workflow/2026-10-15-protocol-proposal/` | v2.10 候选正文、采用说明及审查证据；没有启用到全局规则 |
@@ -43,7 +45,7 @@
 
 ## 怎样看待历史材料
 
-已有文件按原内容复制，正文里的旧建议、状态、绝对路径和既有校验记录都保留。它们说明当时讨论到哪里；最新用户澄清见 [当前方向](CURRENT-DIRECTION.md)。归档没有修改或启用全局协议，也没有恢复历史任务。早期学习目录中的 `PROGRESS.md` 是那次教材编写的历史进度。
+历史讨论、学习资料与审查证据按原内容保存，正文里的旧建议、状态、绝对路径和既有校验记录说明当时讨论到哪里。`planning/` 中的计划与交接稿已经成为 Waygoing 的维护入口，不再宣称与原位置副本逐字一致；变更依据见 [来源表](SOURCES.md)，最新用户决定见 [当前方向](CURRENT-DIRECTION.md)。归档没有启用全局协议或恢复历史任务。早期学习目录中的 `PROGRESS.md` 仍是那次教材编写的历史进度。
 
 本索引使用相对链接，可以随 Waygoing 搬到其他环境。原文中的 Mac 绝对路径可能在其他机器不可用；[来源表](SOURCES.md) 给出已迁入文档的对应位置。原文对源码的引用仍对应当时版本，不能把旧行号直接当成最新子模块的定位。
 
