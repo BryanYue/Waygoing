@@ -1,0 +1,16 @@
+[submodule "reference-harness/codex"]
+	path = reference-harness/codex
+	url = https://github.com/openai/codex.git
+	branch = main
+[submodule "reference-harness/deepseek-harness"]
+	path = reference-harness/deepseek-harness
+	url = https://github.com/deepseek-ai/deepseek-harness.git
+	branch = master
+[submodule "reference-harness/deer-flow"]
+	path = reference-harness/deer-flow
+	url = https://github.com/bytedance/deer-flow.git
+	branch = main
+[submodule "reference-harness/llm-space"]
+	path = reference-harness/llm-space
+	url = https://github.com/deer-flow/llm-space.git
+	branch = main

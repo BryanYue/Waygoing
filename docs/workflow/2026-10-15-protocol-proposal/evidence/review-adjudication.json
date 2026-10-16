@@ -1,0 +1,101 @@
+{
+  "origin": "coordinator",
+  "run_id": "run-GsX4qc0gPc3K068f",
+  "verdict": "accepted_with_corrections",
+  "item_decisions": [
+    {
+      "id": "F1",
+      "disposition": "accepted",
+      "reason": "已按冻结 v2.9 原文生成逐项迁移表，正文保留相关成品/身份/人工合并边界，移除协调者语义审查。"
+    },
+    {
+      "id": "F2",
+      "disposition": "downgraded",
+      "reason": "接受有限工作包和阶段默认换新，包括协调者；不采纳统一压缩次数或普遍压缩计数要求。"
+    },
+    {
+      "id": "F3",
+      "disposition": "downgraded",
+      "reason": "接受正文自包含和适配检查；仅 grep 某入口无命中不能证明完整加载链，本轮未独立验证 dispatch/宿主链全部行为。"
+    },
+    {
+      "id": "F4",
+      "disposition": "accepted",
+      "reason": "G04 记录既有作者身份，升级协调后停止相应实施，不审查/确认自己的候选。"
+    },
+    {
+      "id": "F5",
+      "disposition": "accepted",
+      "reason": "G12 保留需求到凭证的映射；适用独立确认席判断检查方法改变后覆盖，等价参数不新增批准。"
+    },
+    {
+      "id": "F6",
+      "disposition": "accepted",
+      "reason": "原审查者可纠正事实错误；未解决实质争议的最终裁定者不为该 finding 作者或产物/测试作者。"
+    },
+    {
+      "id": "F7",
+      "disposition": "accepted",
+      "reason": "G08 开工预登记已知拟用工作区；后续新增在首次写入前补登记。"
+    },
+    {
+      "id": "F8",
+      "disposition": "downgraded",
+      "reason": "提供 M/R 检查接口但不声称机器已经实现；可追溯手工凭证适用于简单任务，不能一概说仅机器可行。"
+    },
+    {
+      "id": "F9",
+      "disposition": "downgraded",
+      "reason": "G25 补跨任务项目经验载体；原方案未限定仅保存在本任务进度，不强制新固定文件或每次全量读取。"
+    },
+    {
+      "id": "F10",
+      "disposition": "downgraded",
+      "reason": "明确复杂协调按所需推理能力选择型号和档位；不是所有任务必须高档，本轮不宣称插件嵌套派发已实测。"
+    },
+    {
+      "id": "F11",
+      "disposition": "accepted",
+      "reason": "G03/G17/G24 补授权、已知红和变更汇总；接口逐项分清机器事实与判断，不给整段虚标 M。"
+    },
+    {
+      "id": "F12",
+      "disposition": "downgraded",
+      "reason": "原计划已指定相应作者处理语义冲突；正文补清协调者可触发无冲突机械集成但不能做语义修复。"
+    },
+    {
+      "id": "F13",
+      "disposition": "accepted",
+      "reason": "个人提交格式与公司 dev-workflow 留项目适配，未修改现行项目约定。"
+    },
+    {
+      "id": "F14",
+      "disposition": "rejected",
+      "reason": "按任务协调需求而非仓库大小启用 lane 与用户意思一致，不构成实际冲突。"
+    },
+    {
+      "id": "F15",
+      "disposition": "rejected",
+      "reason": "用户要求独立验收测试作者；实施者诊断不能因标为自证而替代独立验收，原方案已经明确。"
+    },
+    {
+      "id": "F16",
+      "disposition": "accepted",
+      "reason": "使用产物作者、核验设计与独立审查描述非代码职责，简单任务不强设三席。"
+    }
+  ],
+  "question_relay": [
+    "Q1：要不要建一个 Claude 和 Codex 都加载的共享通用层（对应 W03–W12）？如果不建，协议正文就自带依赖的原则原句，W 保持只给 Codex 用。用户不回复时按“不建”起草。"
+  ],
+  "question_handling": "原样转达 Q1；本次只交付自包含候选，不安装共享层，不将沉默视作选择或授权。",
+  "scope_corrections": [
+    "委派审查未写正文不等于总任务未交付；正文由起草者完成。",
+    "独立子代理已在同一任务另行执行，Claude 无派发工具不是整体缺席。",
+    "本轮未重新执行以前研究；没有宣称联网或运行时试点完成。"
+  ],
+  "limits": [
+    "文档审查不证明宿主权限、会话生命周期或外部恢复实现。",
+    "已有 fixture 为既有证据，本次未重跑。",
+    "全局源文件和已运行任务未修改。"
+  ]
+}

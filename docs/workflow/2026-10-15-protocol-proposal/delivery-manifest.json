@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-15",
+  "status": "candidate_document_review_complete",
+  "installed": false,
+  "runtime_pilots_run": false,
+  "files": [
+    {
+      "path": "adoption-review-and-checks.md",
+      "bytes": 22791,
+      "sha256": "99bc884dbb00bc631e397ab461f88bb84913b92fd809b2434d8e1a1521503c0d"
+    },
+    {
+      "path": "evidence/candidate-check.md",
+      "bytes": 9114,
+      "sha256": "ff5ca287489c2d192c3aa390dd154ddabd1baae0257dcd3df7f67cf9cfa8a818"
+    },
+    {
+      "path": "evidence/claude-plan-result.json",
+      "bytes": 7361,
+      "sha256": "67403c0e3f68957ef7ca6c8f70412ec415f2f0360edd172c15518cad2f458f26"
+    },
+    {
+      "path": "evidence/claude-plan-review.md",
+      "bytes": 12494,
+      "sha256": "1e17da38e181e57db844fd8f9389e8c7007cccaa4440a670b62a38abc6512375"
+    },
+    {
+      "path": "evidence/independent-plan-review.md",
+      "bytes": 11218,
+      "sha256": "5ffbc156c4dc8b3e750f0a395c97f61dbe895da988bae444e3bfef888898b821"
+    },
+    {
+      "path": "evidence/plan-for-review.md",
+      "bytes": 8808,
+      "sha256": "5022c78e39e11bbcdaed87dd955916907e1b71f3f60a438e5f4888d26bbbc7c7"
+    },
+    {
+      "path": "evidence/plugin-verdict.json",
+      "bytes": 5350,
+      "sha256": "1315beedeaa67c6c9278198c2eb9fa94078012f866a02ed93098354b8a4b0b4e"
+    },
+    {
+      "path": "evidence/review-adjudication.json",
+      "bytes": 4296,
+      "sha256": "faa71644a163da724c16d6d1bd46fcb7fd6f50b6f7f3fd1317ee9ec4020321d0"
+    },
+    {
+      "path": "evidence/source-manifest.json",
+      "bytes": 1273,
+      "sha256": "4ee33416de04871c1a6b5cee7d2693276673ee16cc4d8ce3f64a0139af5034c0"
+    },
+    {
+      "path": "orchestration-protocol-v2.10-candidate.md",
+      "bytes": 23106,
+      "sha256": "f5917466ad962fdc52acb180bcdca5e61d36e0f3ec4ea1727ca91771ac241f53"
+    }
+  ],
+  "final_check": "evidence/candidate-check.md",
+  "plugin_verdict": "evidence/plugin-verdict.json"
+}

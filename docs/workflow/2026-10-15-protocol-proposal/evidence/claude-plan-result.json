@@ -1,0 +1,181 @@
+{
+  "status": "completed",
+  "summary": "修正 plan 的方向可以作为 v2.10 通用规格的起草基础。它和用户原话基本一致，但采用前有两处必须先改：一是缺少 v2.9 逐条处置表；二是会话换新没有默认方向，也没有上界，\"不能无限压缩\"没有落实。另有 4 条主要问题，修法都是起草时补一两句：宿主中立的依赖断链、升级到编排时的角色污染、改闸后覆盖无人判定、争议裁定者可能就是 finding 作者。必须由用户决定的只有 1 条：要不要建一个 Claude 和 Codex 都加载的共享通用层。",
+  "acceptance": [
+    {
+      "criterion": "原话对照与整体方案评价",
+      "self_check": "met",
+      "evidence": "第 1 节逐条对照 msg1–msg7；第 2.1 节给出总体判断"
+    },
+    {
+      "criterion": "指出阻断问题和最小修改，用稳定 id，区分阻断与非阻断",
+      "self_check": "met",
+      "evidence": "F1–F16 分为阻断、主要、一般、轻微四级，每条附最小修改"
+    },
+    {
+      "criterion": "列出值得保留的机制",
+      "self_check": "met",
+      "evidence": "第 2.4 节"
+    },
+    {
+      "criterion": "单列必要的用户决定，没有就写无",
+      "self_check": "met",
+      "evidence": "第 6 节只有 Q1，并附默认做法"
+    },
+    {
+      "criterion": "核对 6 个重点：简单任务不强制 lane、测试与审查独立、协调者不兼任、状态与会话分离、宿主限制、非 coding",
+      "self_check": "met",
+      "evidence": "依次见 2.2、F4/F6/F15、F1/F4、F2、F3、F16"
+    },
+    {
+      "criterion": "用户要求：联网检索成熟机制",
+      "self_check": "not_met",
+      "evidence": "本轮约束禁止联网"
+    },
+    {
+      "criterion": "用户要求：给一个新的通用规格（msg7）",
+      "self_check": "unverified",
+      "evidence": "只给了骨架，没有起草正文，按协调者限定的范围处理"
+    }
+  ],
+  "tests_run": [],
+  "not_verified": [
+    "没有重跑 mechanical-fixtures 和 index-flag-fixtures，只读了结果 JSON",
+    "没有读 9 月 30 日对话，也没有读之前讨论会话释放的对话",
+    "没有联网检索成熟机制",
+    "Claude 子代理能否嵌套派发、Codex 能否设子路径只读、会话能否由代理自己结束，都是推断",
+    "没有通读 dispatch SKILL.md、插件接入页和 dev-workflow skill",
+    "没有核对线上协议文件与冻结副本的 sha 是否一致"
+  ],
+  "disputes": [
+    "msg7 要求给出新的通用规格，协调者把本轮限定为审查加 v2.10 候选；本报告只给骨架",
+    "plan:9,20 把 msg3 的“开工时预先登记各 worktree”改写成“首次写入前登记”",
+    "协调者要求避免固定次数，msg3 要求不能无限压缩；建议用“阶段边界默认换新”同时满足两者",
+    "msg3、msg7 要求联网检索成熟机制，本轮约束禁止联网，没有执行",
+    "msg7 要求开单独子代理，本会话没有派发工具"
+  ],
+  "questions": [
+    "Q1：要不要建一个 Claude 和 Codex 都加载的共享通用层（对应 W03–W12）？如果不建，协议正文就自带依赖的原则原句，W 保持只给 Codex 用。用户不回复时按“不建”起草。"
+  ],
+  "items": [
+    {
+      "id": "F1",
+      "title": "缺 v2.9 逐条处置表；MOVE 由协调者抽查与“协调者不 review”冲突",
+      "confidence": "verified",
+      "severity": "阻断采用",
+      "location": "plan:15; v2.9:42,46,54,57,67",
+      "evidence": "Grep MOVE|EDIT|PR|push 在 plan 中只命中 plan:16 的“FEATURE 标签”"
+    },
+    {
+      "id": "F2",
+      "title": "会话换新没有默认方向和上界，靠会话自评",
+      "confidence": "verified",
+      "severity": "阻断采用",
+      "location": "plan:26; W:127; msg3",
+      "evidence": "plan 只写“阶段结束评估换新”；最小修改是阶段边界默认换新，压缩次数入 PROGRESS"
+    },
+    {
+      "id": "F3",
+      "title": "协议引用 W10，但 Claude 侧不加载 W；dispatch 要求 Git 仓库",
+      "confidence": "verified",
+      "severity": "主要",
+      "location": "plan:15,17; ~/.claude/skills/dispatch/SKILL.md:9,14",
+      "evidence": "Grep ~/.claude/CLAUDE.md 查 AGENTS.md 和 W 编号，无命中"
+    },
+    {
+      "id": "F4",
+      "title": "简单任务升级为编排时，主代理的角色污染没有定义",
+      "confidence": "inferred",
+      "severity": "主要",
+      "location": "plan:16,18; msg1",
+      "evidence": "plan 没写已实施的主代理能否担任协调者，也没写谁审它之前的改动"
+    },
+    {
+      "id": "F5",
+      "title": "改闸后覆盖是否减少，没有判定者",
+      "confidence": "verified",
+      "severity": "主要",
+      "location": "plan:22; v2.9:13; decision 0-A/2-B/5-C",
+      "evidence": "plan 只写“由证据判断”，没有写由谁判断"
+    },
+    {
+      "id": "F6",
+      "title": "争议裁定者可能就是 finding 作者",
+      "confidence": "verified",
+      "severity": "主要",
+      "location": "plan:17; W:40",
+      "evidence": "plan 只写“由独立审查职责裁定”，没有排除 finding 作者本人"
+    },
+    {
+      "id": "F7",
+      "title": "plan 改写了“开工时预先登记 worktree”",
+      "confidence": "verified",
+      "severity": "一般",
+      "location": "plan:9,20; msg3"
+    },
+    {
+      "id": "F8",
+      "title": "凭证要求依赖机器生成；缺 [M] 检查接口清单",
+      "confidence": "inferred",
+      "severity": "一般",
+      "location": "plan:23,29; msg2 脚本化建议"
+    },
+    {
+      "id": "F9",
+      "title": "经验教训没有跨任务载体",
+      "confidence": "verified",
+      "severity": "一般",
+      "location": "plan:28; msg3 magpie LESSONS"
+    },
+    {
+      "id": "F10",
+      "title": "没有回答“用高等级模型当协调者”",
+      "confidence": "verified",
+      "severity": "一般",
+      "location": "plan 全文; msg3",
+      "evidence": "Grep“模型”只命中 plan:18"
+    },
+    {
+      "id": "F11",
+      "title": "漏掉修订单中保留方向的 [M]/[R] 标注、已知红名单、沉默不授权、协调者变更节",
+      "confidence": "verified",
+      "severity": "轻微",
+      "location": "decision 0-C/5-A/5-C/6-E"
+    },
+    {
+      "id": "F12",
+      "title": "集成冲突谁来解决没写清",
+      "confidence": "verified",
+      "severity": "轻微",
+      "location": "plan:25"
+    },
+    {
+      "id": "F13",
+      "title": "通用协议内嵌了个人 commit 格式",
+      "confidence": "verified",
+      "severity": "轻微",
+      "location": "v2.9:68"
+    },
+    {
+      "id": "F14",
+      "title": "“不按仓库大小”与“相对大的项目”措辞容易被读成冲突",
+      "confidence": "verified",
+      "severity": "轻微",
+      "location": "plan:16; msg5"
+    },
+    {
+      "id": "F15",
+      "title": "小任务中实现者写的测试要标为自证证据",
+      "confidence": "inferred",
+      "severity": "轻微",
+      "location": "plan:16"
+    },
+    {
+      "id": "F16",
+      "title": "非 coding 任务里测试席和审查席的对应角色没写",
+      "confidence": "inferred",
+      "severity": "轻微",
+      "location": "plan:27"
+    }
+  ]
+}

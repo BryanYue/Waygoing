@@ -1,0 +1,32 @@
+[
+  {
+    "name": "codex-global-AGENTS.md",
+    "source": "/Users/yueminjun/.codex/AGENTS.md",
+    "sha256": "f1abf1daef3a24bd48367db271787c052b3d9e4d29ab69d0fcf4456a13de069d"
+  },
+  {
+    "name": "orchestration-protocol-v2.9.md",
+    "source": "/Users/yueminjun/.claude/protocols/orchestration-protocol.md",
+    "sha256": "63479da00c8cf9a2467d0efe860fe327a364fb51b7592eece18266319cd6a17b"
+  },
+  {
+    "name": "claude-amendment-v2.10.txt",
+    "source": "/Users/yueminjun/.codex/attachments/a0d1b6a4-fdea-4f8b-9d5b-8e0ba0052fdf/已粘贴的文本.txt",
+    "sha256": "17ee66890d615b0685652a003e8003c3a2f31dc5a708f79e349bc8acff1132a0"
+  },
+  {
+    "name": "amendment-review-decision.json",
+    "source": "/private/tmp/v210-amendment-review-elxff8mi/review-decision.json",
+    "sha256": "0b5d9ddd1f8961e5a725ea21932ed6b4581a37de6aaf9a6163a1110457713281"
+  },
+  {
+    "name": "mechanical-fixtures.json",
+    "source": "/private/tmp/v210-amendment-review-elxff8mi/results.json",
+    "sha256": "72f41daee6331244d96f0147c320dcebc4b72e25c27d34286586a7228f432a0a"
+  },
+  {
+    "name": "index-flag-fixtures.json",
+    "source": "/private/tmp/dual-spec-review-b057hmig/index-flag-results.json",
+    "sha256": "9e2d6beb52382f7d3841fc116bfd02617ca43ec96bec908de2fabb41cfa7adf2"
+  }
+]
